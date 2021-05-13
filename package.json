@@ -1,0 +1,49 @@
+{
+  "name": "gatsby-sbc-boilerplate",
+  "description": "Gatsby @storyblok-components core boilerplate",
+  "author": "Marcin Krawczyk <marckraw@icloud.com>",
+  "license": "MIT",
+  "version": "0.0.1",
+  "keywords": [
+    "gatsby"
+  ],
+  "dependencies": {
+    "@babel/plugin-proposal-optional-chaining": "^7.13.12",
+    "@storyblok-components/simple-text-block": "^0.1.6",
+    "@storyblok-components/utils": "^0.3.5",
+    "core-js": "2.6.5",
+    "gatsby": "^2.24.66",
+    "gatsby-plugin-google-gtag": "^2.1.12",
+    "gatsby-plugin-manifest": "^2.4.32",
+    "gatsby-plugin-offline": "^3.2.29",
+    "gatsby-plugin-react-helmet": "^3.3.12",
+    "gatsby-plugin-sass": "^2.3.14",
+    "gatsby-source-filesystem": "^2.3.31",
+    "gatsby-source-storyblok": "^1.1.1",
+    "lodash": "^4.17.21",
+    "node-sass": "^4.14.1",
+    "prop-types": "^15.7.2",
+    "query-string": "^6.13.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0",
+    "react-markdown": "^4.3.1",
+    "storyblok-js-client": "^3.3.1",
+    "storyblok-react": "^0.1.1"
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "clean": "gatsby clean",
+    "debug": "gatsby develop --inspect",
+    "serve:export:production": "rm -rf ./public && yarn build && npx http-serve ./public",
+    "sync:all": "sb-mig sync components --all --ext",
+    "format": "prettier --write \"src/**/*.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "prettier": "^2.1.1",
+    "sb-mig": "^2.9.2"
+  }
+}
