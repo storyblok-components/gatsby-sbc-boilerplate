@@ -1,16 +1,4 @@
-# Introduction
-
-This repo is a Gatsby [Storyblok](https://www.storyblok.com) Core Boilerplate. It is ready to be used with [ef-sbc](https://github.com/ILC-Technology/ef-sbc) components.
-
-
 ## Getting started
-
-1. Get the source code and install dependencies.
-~~~
-git clone git@github.com:ILC-Technology/gatsby-web-ui-sb-boilerplate-core.git
-cd gatsby-web-ui-sb-boilerplate-core
-npm install
-~~~
 
 2. Exchange the `accessToken` in `gatsby-config.js` with the preview token of a new empty Storyblok space which you can find on the space settings page.
 
